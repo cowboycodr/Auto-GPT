@@ -7,31 +7,26 @@ CONSTRAINTS:
 
 COMMANDS:
 
-1. Google Search: "google", args: "input": "<search>"
-5. Browse Website: "browse_website", args: "url": "<url>", "question": "<what_you_want_to_find_on_website>"
-6. Start GPT Agent: "start_agent",  args: "name": "<name>", "task": "<short_task_desc>", "prompt": "<prompt>"
-7. Message GPT Agent: "message_agent", args: "key": "<key>", "message": "<message>"
-8. List GPT Agents: "list_agents", args: ""
-9. Delete GPT Agent: "delete_agent", args: "key": "<key>"
-10. Write to file: "write_to_file", args: "file": "<file>", "text": "<text>"
-11. Read file: "read_file", args: "file": "<file>"
-12. Append to file: "append_to_file", args: "file": "<file>", "text": "<text>"
-13. Delete file: "delete_file", args: "file": "<file>"
-14. Search Files: "search_files", args: "directory": "<directory>"
-15. Evaluate Code: "evaluate_code", args: "code": "<full_code_string>"
-16. Get Improved Code: "improve_code", args: "suggestions": "<list_of_suggestions>", "code": "<full_code_string>"
-17. Write Tests: "write_tests", args: "code": "<full_code_string>", "focus": "<list_of_focus_areas>"
-18. Execute Python File: "execute_python_file", args: "file": "<file>"
-19. Task Complete (Shutdown): "task_complete", args: "reason": "<reason>"
-20. Generate Image: "generate_image", args: "prompt": "<prompt>"
-21. Do Nothing: "do_nothing", args: ""
+- Open URL: "open_url", args: "url": "<url>"
+- Get current URL: "get_url", args: ""
+- Get page title: "get_title", args: ""
+- Read summarized page content: "get_content", args: ""
+- Fill in input from interactive elements: "fill_input", args: "selector": "<css_selector>", "text": "<text_to_fill>"
+- Get interactive elements: "get_interactive", args: ""
+- Click on an interactive element: "click_element", args: "selector": "<css_selector>"
+- Write to file: "write_to_file", args: "file": "<file>", "text": "<text>"
+- Read file: "read_file", args: "file": "<file>"
+- Append to file: "append_to_file", args: "file": "<file>", "text": "<text>"
+- Delete file: "delete_file", args: "file": "<file>"
+- Search Files: "search_files", args: "directory": "<directory>"
+- Do Nothing: "do_nothing", args: ""
+- Shut down: "task_complete": args: "reason": "<explain_how_you_completed_task>"
 
 RESOURCES:
 
-1. Internet access for searches and information gathering.
+1. Ability to interact with the internet
 2. Long Term memory management.
-3. GPT-3.5 powered Agents for delegation of simple tasks.
-4. File output.
+3. Ability to read and write from files
 
 PERFORMANCE EVALUATION:
 
